@@ -5,23 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
-    <title>Tailwind CSS によるHTML/CSSコーディング入門編</title>
+    <title>PHOTO Book</title>
   </head>
-  <body>
-    <header class="px-6">
-      <h1>
-        <!-- 会社ロゴ(wywy.jp)-->
-        <img
-          class="w-40"
-          alt="会社ロゴ(wywy.jp)"
-          src="https://res.cloudinary.com/wywy-llc/image/upload/v1659236340/wywy/logo_color_sqo3sa.png"
-        />
+  <body class="bg-[#f4f9ff] font-['Hiragino_Kaku_Gothic_ProN'] text-[14px]">
+    <header class="mx-auto my-0 max-w-[1000px] px-[10px] pt-[60px] pb-[66px]">
+      <h1 class="w-40">
+        <a href=""><img alt="ロゴ" src="../images/logo.svg" /></a>
       </h1>
+      <div class="mt-[15px]">
+        <img src="../images/bg.jpeg" alt="background" />
+      </div>
     </header>
-    <main class="px-6 py-6">
-      <!-- カスタムCSSサンプル -->
-      <!-- "btn-blue"は、index.cssに定義済み。 -->
-      <button class="btn-blue">サンプル</button>
+    <main>
+      <section class="bg-white">
+        <div class="mx-auto my-0 max-w-[680px] px-[40px] py-[30px]">
+          <h2 class="text-[18px] font-bold">INDEX</h2>
+          <ol class="mt-[10px] list-decimal px-5">
+            <li class="text-justify tracking-tight">
+              タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+              タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+            </li>
+            <li class="mt-5 text-justify tracking-tight">
+              タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+            </li>
+            <li class="mt-5 text-justify tracking-tight">
+              タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+            </li>
+            <li class="mt-5 text-justify tracking-tight">
+              タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+            </li>
+            <li class="mt-5 text-justify tracking-tight">
+              タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="mx-auto my-0 max-w-[1000px]">
+        <div class="mx-auto my-0 max-w-[680px] px-[40px] py-[30px] sm:flex sm:items-start sm:gap-[60px]">
+          <div>
+            <h2 class="text-[18px] font-bold">DETAIL</h2>
+            <p class="mt-[10px] sm:w-[270px]"><img src="../images/detail.jpeg" alt="detail" /></p>
+          </div>
+          <div>
+            <p class="mt-[25px] text-[18px] font-bold sm:mt-[37px]">タイトルタイトルタイトル</p>
+            <hr class="mt-[25px] sm:mt-[20px]" />
+            <div class="mt-5 flex sm:mt-[17px]">
+              <p class="w-[130px] tracking-tight sm:w-[67px]">著者</p>
+              <p>タイトルタイトルタイトル</p>
+            </div>
+            <div class="flex">
+              <p class="w-[130px] sm:w-[67px]">出版社</p>
+              <p>タイトルタイトルタイトル</p>
+            </div>
+            <div class="flex">
+              <p class="w-[130px] sm:w-[67px]">発行年</p>
+              <p>タイトルタイトルタイトル</p>
+            </div>
+            <hr class="mt-[20px] sm:mt-[17px]" />
+            <p class="mt-[25px] sm:mt-[23px]">
+              テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキスト
+            </p>
+            <p class="mt-[25px] underline sm:mt-[23px]">オンラインストアで見る</p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
